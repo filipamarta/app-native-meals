@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "react-native-meals",
+    "name": "My recipes",
     "slug": "react-native-meals",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -12,18 +12,32 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "buildNumber": "1.0.0",
+      "supportsTablet": true,
+      "bundleIdentifier": "com.filipamarta.myrecipes"
     },
     "android": {
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.filipamarta.myrecipes"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "6ef1c86a-1194-49e4-85e9-46c585382672"
+      }
     }
   }
 }
